@@ -1,0 +1,11 @@
+[Unit]
+Description=Onlypepes Random API
+After=network.target
+
+[Service]
+ExecStart=/usr/local/src/simple-api-server-using-golang/simple-api-server-using-golang
+WorkingDirectory=/usr/local/src/simple-api-server-using-golang
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
